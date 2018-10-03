@@ -32,16 +32,23 @@ export default class Judge extends React.Component {
  
     return (
       <div>
-        <button type="button" onClick={this.applaud.bind(this)}>
+        
+        <br/>
+        <button className='btn btn-primary' type="button" onClick={this.applaud.bind(this)}>
          Appreciate performance
         </button>
-        <button type="button" onClick={this.provideStars.bind(this)}>
+        <br/> <br/>
+        <button  className='btn btn-primary' type="button" onClick={this.provideStars.bind(this)}>
          Provide stars
         </button>
       <br/>
         Kid is available: {available}
         <br/>
-        Stars gained: {stars}
+        <span>
+        
+        <i class="fas fa-star"></i> Stars gained: {stars}
+
+        </span>
       </div>
     );
   }
